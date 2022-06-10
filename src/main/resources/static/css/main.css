@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f3f3f3;
+}
+
+ul {
+    list-style: none;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #fff;
+    padding: 1em 2em;
+}
+
+.header__title {
+    display: flex;
+    align-items: center;
+}
+
+.header .bx {
+    margin-right: 10px;
+    font-size: 3rem;
+}
+
+.cart {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.cart__total {
+    font-size: 1.2rem;
+}
+
+.cart__itemsCount {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: green;
+    color: #fff;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+}
+
+.main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 80vh;
+}
+
+.products__list {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    max-width: 1400px;
+}
+
+.product {
+    display: flex;
+    flex-direction: column;
+    margin: 1em;
+    background-color: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.product__details {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1em;
+}
+.product__title {
+    color: green;
+    font-size: 1.4rem;
+}
+.product__price {
+    font-size: 1.4rem;
+}
+
+.products__image {
+   width: 300px;
+   height: 250px;
+   object-fit: cover;
+}
+
+.btn {
+    margin: 1em;
+    padding: 10px 30px;
+    font-size: 1.2rem;
+    border: none;
+    border-radius: 8px;
+    background-color: green;
+    color: #fff;
+    text-align: center;
+    cursor: pointer;
+    transition: background-color .3s;
+}
+
+.btn:hover {
+    background-color: rgb(0, 60, 0);
+}
+
+.footer {
+    width: 100%;
+    background-color: #fff;
+    padding: 2em;
+    text-align: center;
+}
